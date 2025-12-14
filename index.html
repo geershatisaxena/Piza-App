@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Palace - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-pizza-slice"></i>
+                <span>Pizza Palace</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="order.html">Order Pizza</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="nav-auth">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </li>
+            </ul>
+            
+            <div class="user-menu" id="userMenu">
+                <!-- Will be populated by JavaScript if user is logged in -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Delicious Pizza Delivered to Your Door</h1>
+            <p>Fresh ingredients, authentic recipes, and fast delivery. Order your favorite pizza now!</p>
+            <div class="hero-buttons">
+                <a href="order.html" class="btn btn-primary btn-lg">Order Now</a>
+                <a href="#special-offers" class="btn btn-outline btn-lg">View Specials</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Delicious Pizza">
+        </div>
+    </section>
+
+    <!-- Featured Pizzas -->
+    <section class="featured-pizzas">
+        <div class="container">
+            <h2 class="section-title">Our Most Popular Pizzas</h2>
+            <div class="pizza-grid">
+                <div class="pizza-card">
+                    <div class="pizza-img" style="background-color: #ffd8b1;"></div>
+                    <h3>Margherita</h3>
+                    <p>Classic tomato sauce, fresh mozzarella, and basil</p>
+                    <div class="pizza-price">$12.99</div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img" style="background-color: #f5c6a5;"></div>
+                    <h3>Pepperoni</h3>
+                    <p>Tomato sauce, mozzarella, and lots of pepperoni</p>
+                    <div class="pizza-price">$14.99</div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img" style="background-color: #ffb8a1;"></div>
+                    <h3>Vegetarian</h3>
+                    <p>Mushrooms, bell peppers, onions, olives, and tomatoes</p>
+                    <div class="pizza-price">$15.99</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers" id="special-offers">
+        <div class="container">
+            <h2 class="section-title">Special Offers</h2>
+            <div class="offer-card">
+                <div class="offer-content">
+                    <h3>Family Feast Friday</h3>
+                    <p>Get 2 large pizzas, garlic bread, and a 2L soda for only $29.99! Every Friday.</p>
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                </div>
+                <div class="offer-badge">Limited Time</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-pizza-slice"></i> Pizza Palace</h3>
+                    <p>Delivering happiness since 2010. The best pizza in town, made with love and fresh ingredients.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Order Pizza</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Pizza Street, Food City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@pizzapalace.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pizza Palace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

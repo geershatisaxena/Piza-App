@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Palace - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-pizza-slice"></i>
+                <span>Pizza Palace</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order Pizza</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li class="nav-auth">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </li>
+            </ul>
+            
+            <div class="user-menu" id="userMenu">
+                <!-- Will be populated by JavaScript if user is logged in -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <div class="about-container">
+        <div class="about-hero">
+            <h1>About Pizza Palace</h1>
+            <p>Our story, our passion, and our commitment to delivering the best pizza experience</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 2010, Pizza Palace began as a small family-owned restaurant with a simple mission: to create the most delicious, high-quality pizza using the freshest ingredients.</p>
+                <p>What started as a neighborhood pizza shop has grown into a beloved local institution, known for our authentic recipes, generous portions, and commitment to customer satisfaction.</p>
+                <p>We still use the same secret family dough recipe that our founder's grandmother brought from Italy, and we still hand-toss every pizza to ensure the perfect crust.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Our Pizza">
+            </div>
+        </div>
+        
+        <div class="about-content reverse">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w-800&q=80" alt="Our Ingredients">
+            </div>
+            <div class="about-text">
+                <h2>Our Ingredients</h2>
+                <p>At Pizza Palace, we believe that great pizza starts with great ingredients. That's why we source only the finest:</p>
+                <ul>
+                    <li>Fresh, never frozen mozzarella cheese</li>
+                    <li>Vine-ripened tomatoes for our signature sauce</li>
+                    <li>Hand-selected vegetables delivered daily</li>
+                    <li>Premium meats from local, trusted suppliers</li>
+                    <li>Organic flour for our hand-tossed dough</li>
+                </ul>
+                <p>We never use preservatives, artificial flavors, or shortcuts. Every pizza is made to order with care and attention to detail.</p>
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img">
+                        <i class="fas fa-user-chef"></i>
+                    </div>
+                    <h3>Maria Rodriguez</h3>
+                    <p>Head Chef</p>
+                    <p>With over 20 years of experience, Maria brings authentic Italian flavors to every pizza.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>James Wilson</h3>
+                    <p>Founder & Owner</p>
+                    <p>James started Pizza Palace with a dream to share his family's pizza recipe with the community.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Sarah Chen</h3>
+                    <p>Operations Manager</p>
+                    <p>Sarah ensures every order is perfect and every delivery is on time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-pizza-slice"></i> Pizza Palace</h3>
+                    <p>Delivering happiness since 2010. The best pizza in town, made with love and fresh ingredients.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Order Pizza</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Pizza Street, Food City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@pizzapalace.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pizza Palace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

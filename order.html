@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Palace - Order Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-pizza-slice"></i>
+                <span>Pizza Palace</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html" class="active">Order Pizza</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="nav-auth">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </li>
+            </ul>
+            
+            <div class="user-menu" id="userMenu">
+                <!-- Will be populated by JavaScript if user is logged in -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Order Container -->
+    <div class="order-container">
+        <div class="order-header">
+            <h1>Build Your Perfect Pizza</h1>
+            <p>Customize every detail of your pizza. Choose your size, crust, sauce, cheese, and toppings.</p>
+        </div>
+        
+        <div class="order-grid">
+            <!-- Pizza Options -->
+            <div class="pizza-options">
+                <div class="option-group">
+                    <h3>Size</h3>
+                    <div class="options-grid" id="sizes">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <h3>Crust Type</h3>
+                    <div class="options-grid" id="crusts">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <h3>Sauce</h3>
+                    <div class="options-grid" id="sauces">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <h3>Cheese</h3>
+                    <div class="options-grid" id="cheeses">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="option-group">
+                    <h3>Toppings ($1.49 - $2.49 each)</h3>
+                    <div class="options-grid" id="toppings">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                
+                <div class="summary-item">
+                    <span>Size:</span>
+                    <span id="summarySize">Medium Pizza</span>
+                </div>
+                
+                <div class="summary-item">
+                    <span>Crust:</span>
+                    <span id="summaryCrust">Regular Crust</span>
+                </div>
+                
+                <div class="summary-item">
+                    <span>Sauce:</span>
+                    <span id="summarySauce">Tomato Sauce</span>
+                </div>
+                
+                <div class="summary-item">
+                    <span>Cheese:</span>
+                    <span id="summaryCheese">Mozzarella</span>
+                </div>
+                
+                <div class="summary-item">
+                    <span>Toppings:</span>
+                    <span id="summaryToppings">None</span>
+                </div>
+                
+                <div class="summary-item">
+                    <span>Quantity:</span>
+                    <div class="quantity-control">
+                        <button class="qty-btn" id="decreaseQty">-</button>
+                        <span class="qty-value" id="quantityValue">1</span>
+                        <button class="qty-btn" id="increaseQty">+</button>
+                    </div>
+                </div>
+                
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotalPrice">$12.99</span>
+                </div>
+                
+                <div class="summary-item">
+                    <span>Tax (8%):</span>
+                    <span id="taxPrice">$1.04</span>
+                </div>
+                
+                <div class="summary-item">
+                    <span>Delivery Fee:</span>
+                    <span id="deliveryPrice">$2.99</span>
+                </div>
+                
+                <div class="summary-item summary-total">
+                    <span>Total:</span>
+                    <span id="totalPrice">$17.02</span>
+                </div>
+                
+                <button class="btn btn-primary btn-block" id="placeOrder">
+                    <i class="fas fa-shopping-cart"></i> Place Order
+                </button>
+                
+                <p class="delivery-note">
+                    <i class="fas fa-info-circle"></i>
+                    Estimated delivery time: 30-45 minutes
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-pizza-slice"></i> Pizza Palace</h3>
+                    <p>Delivering happiness since 2010. The best pizza in town, made with love and fresh ingredients.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Order Pizza</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Pizza Street, Food City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@pizzapalace.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pizza Palace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="db.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>
